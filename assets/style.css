@@ -1,0 +1,68 @@
+
+/* variables for color */
+:root {
+    --dark: #1A1A1D;
+    --lidark: #4E4E50;
+    --darkred: #6F2232;
+    --midred: #950740;
+    --lired: #C3073F;
+
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: var(--dark);
+}
+
+/* creates header with transparent border */
+header {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    background-color: var(--darkred);
+}
+
+
+.title {
+    background-color: var(--darkred);
+    padding-right: 30px;
+}
+
+/* provides style to title box*/
+header h1 { 
+    color: white;
+    font-size: 60px;
+    text-shadow: 10px 6px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    background-color: rgba(5, 3, 17, 0.304);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header nav {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(5, 3, 17, 0.304);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    min-width: 50px;
+    text-align: center;
+}
