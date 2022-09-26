@@ -92,12 +92,9 @@ section {
     border-left:  4px solid var(--lired);
 }
 
-aside {
-    padding: 20px;
-}
-
-aside a h2 {
+aside a h4 {
     text-align: center;
+    min-width: 100px;
 }
 
 
@@ -143,8 +140,4 @@ footer {
     display: flex;
     margin-left: auto;
 }
-
-
-
-
 
