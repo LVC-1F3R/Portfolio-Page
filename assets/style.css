@@ -2,8 +2,8 @@
 /* variables for color */
 :root {
     --dark: #1A1A1D;
-    --lidark: #4E4E50;
-    --darkred: #6F2232;
+    --lidark: rgba(78,78,80, 0.5);
+    --darkred: rgba(111, 34, 50, 100);
     --midred: #950740;
     --lired: #C3073F;
 
@@ -12,43 +12,50 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    border-radius: 8px;
+    color: white;
 }
 
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--dark);
+    gap: 30px;
 }
 
 /* creates header with transparent border */
 header {
     display: flex;
     justify-content: space-between;
-    border-radius: 8px;
     backdrop-filter: blur(20px);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
     background-color: var(--darkred);
 }
 
-
-.title {
-    background-color: var(--darkred);
-    padding-right: 30px;
-}
-
 /* provides style to title box*/
 header h1 { 
-    color: white;
+    text-align: center;
     font-size: 60px;
     text-shadow: 10px 6px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(20px);
     background-color: rgba(5, 3, 17, 0.304);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     padding: 30px;
-    padding-top: 50px;
     padding-bottom: 50px;
+
+}
+
+header img {
+    backdrop-filter: blur(20px);
+    background-color: rgba(5, 3, 17, 0.304);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: -50px;
 }
 
 header nav {
+    gap: 10px;
     align-self: flex-end;
     display: flex;
     flex-direction: row;
@@ -56,7 +63,6 @@ header nav {
 }
 
 nav a {
-    color: white;
     font-size: 11px;
     letter-spacing: 1px;
     backdrop-filter: blur(20px);
@@ -66,3 +72,58 @@ nav a {
     min-width: 50px;
     text-align: center;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    backdrop-filter: blur(20px);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    background-color: var(--lidark);
+    padding: 20px;
+    border-radius: 0px;
+    border-left:  4px solid var(--lired);
+}
+
+aside {
+    padding: 20px;
+}
+
+aside a {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    align-self: center;
+}
+
+.title {
+    background-color: var(--darkred);
+    padding-right: 30px;
+}
+
+.about {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+
+.work {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.contact {
+    display: flex;
+    margin-left: auto;
+}
+
+
+
+
