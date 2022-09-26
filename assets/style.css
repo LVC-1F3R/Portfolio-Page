@@ -32,12 +32,14 @@ header {
     backdrop-filter: blur(20px);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
     background-color: var(--darkred);
+    align-self: center;
+    max-width: 1000px;
 }
 
 /* provides style to title box*/
 header h1 { 
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     text-shadow: 10px 6px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(20px);
     background-color: rgba(5, 3, 17, 0.304);
@@ -45,6 +47,7 @@ header h1 {
     padding: 30px;
     padding-bottom: 50px;
     margin-left: 10px;
+    
 }
 
 header img {
@@ -97,6 +100,9 @@ aside a h4 {
     min-width: 100px;
 }
 
+button {
+    background-color: var(--midred);
+}
 
 footer {
     display: flex;
@@ -110,15 +116,36 @@ footer {
 
 .about {
     display: flex;
-    margin-left: auto;
+    align-self: center;
+    max-width: 800px;
 }
 
 
 .work {
     display: flex;
-    margin-left: auto;
-
+    align-self: center;
+    max-width: 800px;
 }
+
+
+.recent {
+    width: 80%; 
+    height: 40%; 
+    object-fit: cover; 
+    padding: 5px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    backdrop-filter: blur(20px);
+    background-color: var(--darkred);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.recent:hover {
+    opacity: 0.3;
+  }
+
 
 .notrecent {
     display: flex;
@@ -131,13 +158,43 @@ footer {
     height: 50%;
     width: 100%;
     object-fit: cover;
-
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    backdrop-filter: blur(20px);
+    background-color: var(--darkred);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 3px solid rgba(255, 255, 255, 0.3);
   }
 
+  .notrecent a img:hover {
+    opacity: 0.3;
+  }
 
 
 .contact {
     display: flex;
-    margin-left: auto;
+    align-self: center;
+    max-width: 800px;
 }
 
+.contact section {
+    max-width: 800px
+}
+
+@media screen and (min-width: 972px) {
+    
+
+    .about section {
+        
+        min-width: 675px;
+    }
+
+     .work section {
+        min-width: 675px;
+    }
+
+    .contact section {
+        min-width: 675px;
+    }
+}
