@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
+    <!-- header element containing name, recent photo and nav -->
     <header>
         <div class="title">
             <h1>
@@ -15,6 +16,7 @@
             <img src="./assets/img/ava.jpeg" width="150px"alt="">
             </h1>
         </div>
+        <!-- nav will scroll directly to sections using href -->
         <nav>
             <a href="#aboutme">AboutMe</a>
             <a href="#work">Work</a>
@@ -22,13 +24,17 @@
         </nav>
     </header>
 
+    <!-- creates block for all main content of webpage -->
     <main>
+<!-- left title -->
         <div class="about">
         <aside>
             <a name="aboutme">
                 <h4>About Me</h4>
             </a>
         </aside>
+
+        <!-- creates block for about section -->
         <section>
             <article>
                 <P>Technologically advanced and highly adaptable professional; ready to excel in a challenging role as a Software Developer to add value in a corporate sector.</P>
@@ -36,34 +42,37 @@
         </section>
         </div>
 
+<!-- left title -->
         <div class="work">
         <aside>
             <a name="work">
                 <h4>Work</h4>
             </a>
         </aside>
+        <!-- contains preview and link to recent projects -->
         <section>
+            <!-- most recent project -->
             <a href="https://github.com/LVC-1F3R/Portfolio-Page">
                 <img class="recent" src="./assets/img/portfoliosite.png" alt="">
             </a>
-
+            <!-- can contain multipe previous projects -->
             <div class="notrecent">
                 <a href="https://github.com/LVC-1F3R/horiseon-webpage-accessibility-upgrade">
                     <img class="second" src="./assets/img/horiseon.png" alt="">
                 </a>
-                <!-- <a href="">
-                    <img class="third" src="./assets/img/comingsoon.png" alt="">
-                </a> -->
+
             </div>
         </section>
         </div>
 
+<!-- left title -->
         <div class="contact">
         <aside>
             <a name="contact">
                 <h4>Contact</h4>
             </a>
         </aside>
+        <!-- contact buttons with corresponding links -->
         <section>
             <a href="mailto:someone@something.com?">
                 <button id="btnEmail">E-mail</button>
@@ -78,7 +87,7 @@
         </div>
     </main>
 
-
+<!-- footer with content -->
     <footer>
         <h6>Made by Troy Sparks</h6>
     </footer>

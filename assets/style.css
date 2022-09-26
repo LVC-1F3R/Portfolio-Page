@@ -9,14 +9,15 @@
 
 }
 
+/* adds global font styling and global rounded edges */
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    border-radius: 8px;
     color: white;
+    border-radius: 8px;
 }
 
-
+/* creates column flex container. applies color and gap to body. */
 body {
     display: flex;
     flex-direction: column;
@@ -24,7 +25,7 @@ body {
     gap: 30px;
 }
 
-/* creates header with transparent border */
+/* header becomes flex container. applies spaces to contents. wraps contents. applies styling  */
 header {
     display: flex;
     justify-content: space-between;
@@ -33,10 +34,9 @@ header {
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
     background-color: var(--darkred);
     align-self: center;
-    max-width: 1000px;
 }
 
-/* provides style to title box*/
+/* provides style to text in title box*/
 header h1 { 
     text-align: center;
     font-size: 40px;
@@ -50,6 +50,7 @@ header h1 {
     
 }
 
+/* provides style to image in title box */
 header img {
     backdrop-filter: blur(20px);
     background-color: rgba(5, 3, 17, 0.304);
@@ -58,6 +59,7 @@ header img {
     margin-bottom: -50px;
 }
 
+/* creates flex container for nav. generates positioning for nav */
 header nav {
     display: flex;
     gap: 10px;
@@ -69,6 +71,7 @@ header nav {
     padding-bottom: 10px;
 }
 
+/* adds style to nav menu buttons and positioning within nav flex container */
 nav a {
     font-size: 11px;
     letter-spacing: 1px;
@@ -80,12 +83,14 @@ nav a {
     text-align: center;
 }
 
+/* creates a column flex container in main element with gap for positioning */
 main {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/*  creates style for all section elements along with positioning */
 section {
     backdrop-filter: blur(20px);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
@@ -95,39 +100,45 @@ section {
     border-left:  4px solid var(--lired);
 }
 
+
+/* adds styling for names of sections to the left of the page */
 aside a h4 {
     text-align: center;
     min-width: 100px;
 }
 
+/* adds global button color */
 button {
     background-color: var(--midred);
 }
 
+/* creates a flex container in footer and aligned to center of the page */
 footer {
     display: flex;
     align-self: center;
 }
 
+/* creates styling for title div within header */
 .title {
     background-color: var(--darkred);
     padding-right: 30px;
 }
 
+/* flex container created in about div. adds positioning */
 .about {
     display: flex;
     align-self: center;
     max-width: 800px;
 }
 
-
+/* flex container created in about div. adds positioning */
 .work {
     display: flex;
     align-self: center;
     max-width: 800px;
 }
 
-
+/* positioning and sizing to recent project image  */
 .recent {
     width: 80%; 
     height: 40%; 
@@ -142,11 +153,12 @@ footer {
     border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
+/* image fades when cursor hovers it */
 .recent:hover {
     opacity: 0.3;
   }
 
-
+  /* creates flex container.  */
 .notrecent {
     display: flex;
     flex-direction: row;
@@ -154,6 +166,8 @@ footer {
     padding-left: 10px;
 }
 
+
+/* adds positioning, sizing and effects */
 .notrecent a img {
     height: 40%;
     width: 80%;
@@ -167,17 +181,19 @@ footer {
     border: 3px solid rgba(255, 255, 255, 0.3);
   }
 
+/* image fades when cursor hovers over it */
   .notrecent a img:hover {
     opacity: 0.3;
   }
 
-
+/* turns contact div to flex container. adds positioning and sizing */
 .contact {
     display: flex;
     align-self: center;
     max-width: 800px;
 }
 
+/* adds max sizing to keep design */
 .contact section {
     max-width: 800px
 }
