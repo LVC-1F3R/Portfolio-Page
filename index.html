@@ -9,35 +9,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
-<body>
+
+
+<body class="bg-success p-2 text-dark bg-opacity-10">
+
     <!-- header element containing name, recent photo and nav -->
-    <header>
-        <div class="title">
+    <header class="bg-secondary bg-gradientp-2 text-dark bg-opacity-50 navbar navbar-expand-lg m-1 p-5 border border-dark" >
+        <div>
             <h1>
             Troy Sparks
             <img src="./assets/img/ava.jpeg" width="150px"alt="avatar image">
             </h1>
         </div>
         <!-- nav will scroll directly to sections using href -->
-        <nav>
-            <a href="#aboutme">AboutMe</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
+        <nav class="btn-group m-3">
+            <a class="btn btn-light" href="#aboutme">About Me</a>
+            <a class="btn btn-light" href="#collab">Collaborative Projects</a>
+            <a class="btn btn-light" href="#personal">Personal Projects</a>
+            <a class="btn btn-light" href="#contact">Contact</a>
+        </nav>
+ 
+    </header>
     <!-- creates block for all main content of webpage -->
     <main>
 <!-- left title -->
-        <div class="about">
-        <aside>
-            <a name="aboutme">
-                <h4>About Me</h4>
+        <div class=" m-1 border border-dark p-3">
+        <aside class="d-flex flex-column" id="aboutme">
+            <a>
+                <h5 class="bg-secondary p-2 text-dark bg-opacity-25 text-center rounded">About Me</h5>
             </a>
         </aside>
 
         <!-- creates block for about section -->
-        <section>
+        <section class="mx-3">
             <article>
                 <P>Technologically advanced and highly adaptable professional; ready to excel in a challenging role as a Software Developer to add value in a corporate sector.</P>
             </article>
@@ -45,50 +50,55 @@
         </div>
 
 <!-- left title -->
-<div class="work">
-        <aside>
-        <h4>Collaborative Projects</h4>
+<div class=" m-1 border border-dark p-3" id="collabContainer">
+        <aside class="d-flex flex-column" id="collab">
+        <h5 class="bg-secondary p-2 text-dark bg-opacity-25 text-center rounded">Collaborative Projects</h5>
         </aside>
 
-        <section>
+        <section class="d-flex mx-3">
             <a href="https://github.com/manyLizards/lawffice">
-                <img class="recent" src="./assets/img/lawffice_home.png" alt="preview of portfolio site">
+                <img class="img-thumbnail"  src="./assets/img/lawffice_home.png" alt="lawffice">
             </a>
         </section>
 
+</div>
 
-
-        <aside>
-            <a name="work">
-                <h4>Personal Projects</h4>
+<div class=" m-1 border border-dark p-3" id="personalContainer">
+        <aside class="d-flex flex-column" id="personal">
+            <a>
+                <h5 class="bg-secondary p-2 text-dark bg-opacity-25 text-center rounded">Personal Projects</h5>
             </a>
         </aside>
 
         <!-- contains preview and link to recent projects -->
-        <section>
+        <section class="d-flex flex-column">
             <!-- most recent project -->
+            <h6 class="badge bg-secondary">Most Recent Project</h6>
                 <a href="https://github.com/iskry/WeatherApp">
-                    <img class="recent" src="./assets/img/weatherDash.png" alt="preview of portfolio site">
+                    <img class="img-thumbnail"  id="recentProject" src="./assets/img/weatherDash.png" alt="weather dashboard">
                 </a>
                 
             <!-- can contain multipe previous projects -->
-            <div class="notrecent">
-                
+            <div class="d-flex flex-column">
+            
+            <h6 class="badge bg-secondary">Previous Projects</h6>
+            </div>
+            <div class="d-flex">
                 <a href="https://github.com/iskry/workDayScheduler">
-                    <img class="recent" src="./assets/img/workDayScheduler.png" alt="preview of portfolio site">
+                    <img class="img-thumbnail" src="./assets/img/workDayScheduler.png" alt="work day scheduler">
                 </a>
-
+            
                 <a href="https://github.com/iskry/jsTimedQuiz">
-                    <img class="recent" src="./assets/img/jsQuiz.png" alt="preview of portfolio site">
+                    <img class="img-thumbnail" src="./assets/img/jsQuiz.png" alt="js timed quiz">
                 </a>
                 <a href="https://github.com/iskry/passGenerator">
-                    <img class="recent" src="./assets/img/passgenpage.png" alt="preview of portfolio site">
+                    <img class="img-thumbnail" src="./assets/img/passgenpage.png" alt="pass generator">
                 </a>
                 <a href="https://github.com/iskry/Portfolio-Page">
-                    <img class="recent" src="./assets/img/portfoliosite.png" alt="preview of portfolio site">
+                    <img class="img-thumbnail" src="./assets/img/portfoliosite.png" alt="preview of portfolio site">
                 </a>
                 <a href="https://github.com/iskry/horiseon-webpage-accessibility-upgrade">
-                    <img class="second" src="./assets/img/horiseon.png" alt="preview of horseon site">
+                    <img class="img-thumbnail"  src="./assets/img/horiseon.png" alt="preview of horseon site">
                 </a>
 
             </div>
@@ -96,30 +106,32 @@
         </div>
 
 <!-- left title -->
-        <div class="contact">
-        <aside>
-            <a name="contact">
-                <h4>Contact</h4>
+        <div class="d-flex flex-column m-1 border border-dark p-3">
+            <center>
+        <aside id="contact">
+            <a>
+                <h5 class="bg-secondary p-2 text-dark bg-opacity-25 text-center rounded">Contact</h5>
             </a>
         </aside>
         <!-- contact buttons with corresponding links -->
-        <section>
-            <a href="mailto:someone@something.com?">
-                <button id="btnEmail">E-mail</button>
+        <section class="btn-group">
+            <a href="mailto:troyspar@amazon.com?">
+                <button class="btn btn-light" id="btnEmail">E-mail</button>
             </a>
-            <a href="linkedin">
+            <!-- <a href="linkedin">
                 <button id="btnLinkedin">Linkedin</button>
-            </a>
+            </a> -->
             <a href="https://github.com/iskry">
-                <button id="btnGit">GitHub</button>
+                <button class="btn btn-light" id="btnGit">GitHub</button>
             </a>
         </section>
+            </center>
         </div>
     </main>
 
 <!-- footer with content -->
     <footer>
-        <h6>Made by Troy Sparks</h6>
+        <center><h6>Made by Troy Sparks</h6></center>
     </footer>
 </body>
 </html>
