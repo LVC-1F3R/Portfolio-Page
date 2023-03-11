@@ -1,5 +1,8 @@
 import React from 'react'
 import './projects.css'
+import TALES from '../../assets/img/talesalgo.png'
+import ECOM from '../../assets/img/ecommerce.jpeg'
+import SOCIAL from '../../assets/img/social.png'
 import {BsPatchCheckFill} from 'react-icons/bs'
 
 
@@ -14,40 +17,22 @@ const Projects = () => {
       <h5>Check Out</h5>
       <h2>My Recent Projects</h2>
       
-      <div className="container experience__container">
-        <div className="projects">
-          <a href="https://github.com/username/repo">
-          <img src="project-image.jpg" alt="Project" />
+      <div className="container project__container ">
+          <a href="https://github.com/iskry/TalesfromtheAlgorithm">
+          <img src={TALES} alt="Tales from the Algorithm" />
           </a>
-          <div className="project-title">Project Title</div>
-        </div>
 
-
-        <div className="projects">
-          <a href="https://github.com/username/repo">
-          <img src="project-image.jpg" alt="Project" />
+          <a href="https://github.com/iskry/E-Commerce-BackEnd">
+          <img src={ECOM} alt="E-Commerce Backend" />
           </a>
-          <div className="project-title">Project Title</div>
-        </div>
 
-        <div className="projects">
-          <a href="https://github.com/username/repo">
-          <img src="project-image.jpg" alt="Project" />
+
+          <a href="https://github.com/iskry/introvertsUnite">
+          <img src={SOCIAL} alt="Social Network Backend" />
           </a>
-          <div className="project-title">Project Title</div>
-        </div>
+      </div>
 
-        <div className="projects">
-          <a href="https://github.com/username/repo">
-          <img src="project-image.jpg" alt="Project" />
-          </a>
-          <div className="project-title">Project Title</div>
-        </div>
-        
-
-
-
-      </div> 
+      <h2>Experience</h2>
         <div className="container experience__container">
         <div className="experience__frontend experience">
           <h3>Frontend Development</h3>
