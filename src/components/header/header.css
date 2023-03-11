@@ -4,6 +4,11 @@ header {
   overflow: hidden;
 }
 
+.me img{
+     border-radius: 100px;
+    opacity: 0.6;
+}
+
 .header__container {
   text-align: center;
   height: 100%;
@@ -84,7 +89,7 @@ header {
     max-width: 20rem;
     margin-top: 2.5rem;
     justify-content: center;
-  }
+   }
 
   .cta {
     margin-top: 1.7rem;
