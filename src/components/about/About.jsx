@@ -38,7 +38,7 @@ const About = () => {
             As a full-stack developer and AWS Cloud Practitioner certified, I'm always in the cloud and ready to deploy some serious code. I bring adaptability and problem-solving skills to every project, delivering bespoke solutions that meet client requirements. With a knack for technical communication and cross-functional collaboration, I excel at coordinating project-based efforts within tight deadlines.
           </p>
 
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+
         </div>
       </div>
     </section>

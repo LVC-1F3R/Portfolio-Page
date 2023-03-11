@@ -1,12 +1,11 @@
 import React from 'react'
 import './footer.css'
-import {FaFacebookF} from 'react-icons/fa'
 import {MdOutlineEmail} from 'react-icons/md'
 
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contact">
       <a href="#" className='footer__logo'>ISKRY</a>
 
       <ul className='permalinks'>
@@ -15,9 +14,9 @@ const Footer = () => {
         <li><a href="#experience">Expeirience</a></li>
       </ul>
 
-      <div className="footer__socials">
-      <a href="https://facebook.com"><MdOutlineEmail/></a>
-      </div>
+
+      <a href="mailto:iskrydev@gmail.com" target="_blank"><MdOutlineEmail/></a>
+
 
     </footer>
   )
