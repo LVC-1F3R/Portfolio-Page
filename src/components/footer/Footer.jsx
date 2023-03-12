@@ -1,21 +1,20 @@
 import React from 'react'
 import './footer.css'
+import {BsLinkedin} from 'react-icons/bs'
+import {FaGithub} from 'react-icons/fa'
 import {MdOutlineEmail} from 'react-icons/md'
 
 
 const Footer = () => {
   return (
-    <footer id="contact">
-      <a href="#" className='footer__logo'>ISKRY</a>
+    <footer>
+      <div className='footer__socials'>
+        <a href="https://www.linkedin.com/in/troy-sparks-a7899a262/"><BsLinkedin/></a>
+        <a href="https://github.com/iskry"><FaGithub/></a>
+        <a href="mailto:iskrydev@gmail.com"><MdOutlineEmail/></a>
+    </div>
 
-      <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Expeirience</a></li>
-      </ul>
-
-
-      <a href="mailto:iskrydev@gmail.com" target="_blank"><MdOutlineEmail/></a>
+    <a href="#" className='footer__logo'>ISKRY</a>
 
 
     </footer>
