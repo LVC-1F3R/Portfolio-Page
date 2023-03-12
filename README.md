@@ -2,6 +2,9 @@
 
 This is my portfolio built using React, showcasing my recent projects and skills.
 
+![Portfolio](./src/assets/img/portfoliosite1.png "Portfolio")
+
+
 ## Deployed Link
 
 The portfolio is deployed on [https://main.d34mk2f6ky1jl4.amplifyapp.com/](https://main.d34mk2f6ky1jl4.amplifyapp.com/).
